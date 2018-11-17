@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        margin:0px;
+        }
+      p {
+        font-family: 'Noto Sans', sans-serif;
+      }
+      a {
+        color:#0078FF;
+        text-decoration: none;
+      }
+      .body1 {
+        padding-top: 30px;
+        border:1px solid gray;
+        background-color:#263238;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 32px;
+        color: white;
+      }
+      #itme p {
+        margin-top:16px;
+      }
+      #sub {
+        margin-top:30px;
+      }
+      .body1 h1 {
+        color: #FF5722;
+        margin-bottom: 48px;
+      }
+      .body1 iframe {
+        padding-top:16px;
+      }
+      .icon {
+        height:100%;
+        width:500px;
+        display:flex;
+        margin-bottom: 8px;
+      }
+      .item {
+        flex-grow: 1;
+        width: 160px;
+        height :100%;
+        text-align: center;
+      }
+      .body2 {
+        border:0px solid gray;
+        line-height: 28px;
+        margin: auto;
+        padding-bottom: 48px;
+        padding-top:16px;
+      }
+      .body2 h2 {
+        color: #FF5722;
+        margin-top: 48px;
+      }
+      .body2_2 {
+        background-color: #F5F5F5;
+        border-top:1px solid #FBFBFC;
+        padding: 24px;
+        margin-top: 16px;
+      }
+      .body3 {
+        margin: auto;
+        border-top:1px solid #B2C0CC;
+        border-bottom:1px solid #B2C0CC;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        line-height: 28px;
+        text-align: center;
+      }
+      .body3 h2 {
+        color: #FF5722;
+      }
+      .body3_2_1 {
+        margin-top:24px;
+      }
+      .body3_3 {
+        margin-top:56px;
+      }
+      .body4 {
+        margin: auto;
+        border-bottom: 1px solid #B2C0CC;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        line-height: 28px;
+      }
+      .body4_2 {
+        background-color: #F5F5F5;
+        padding:16px 24px 16px 24px;
+      }
+      .body5 {
+        margin: auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        line-height: 28px;
+      }
+      .body5 ul {
+        padding-left:32px;
+      }
+      .footer {
+        margin: auto;
+        line-height: 28px;
+        padding-top: 24px;
+        padding-bottom: 32px;
+        border-top:1px solid #B2C0CC;
+        color: #FF5722;
+      }
+      .body4_2 p {
+        margin-bottom: 8px;
+      }
+      .body4_2_1 {
+        padding-left: 16px;
+      }
+      .body1 img {
+        width: 78px; height: 78px;
+      }
+      .body3 img {
+        width: 58px; height: 58px;
+      }
+      .thumbnail {
+        padding-right: 16px;
+      }
+      .thumbnail img {
+        max-width: 264px;
+      }
+      #grid {
+        display: flex;
+        justify-content: center;
+      }
+      @media(max-width:500px) {
+        .icon {
+          flex-direction: column;
+          width:100%;
+        }
+        .body3 {
+          text-align: left;
+        }
+        .body1 {
+          padding-bottom: 16px;
+        }
+        .body1 h1{
+          font-size:24px
+        }
+        .thumbnail {
+          margin:0 auto 0 auto;
+          padding-right: 0px;
+        }
+        .thumbnail img {
+          max-width: 100%;
+        }
+      }
+      @media(max-width:1000px) {
+        #grid {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .thumbnail {
+          margin:0 auto 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div class="thumbnail">
+        <img src="image/thumbnail.png">
+      </div>
+    <div class="contents">
+      <div class="body1" style="max-width:796px">
+        <img src="image/logo.png">
+      <div id="sub"><p>iOS 오프라인 밋업에서나 겨우 들을 수 있었던 그 강의!</p></div>
+      <h1>Swift로 함수형 프로그래밍 시작하기<br>온라인 동영상 + 온라인 실습 강의</h1>
+        <center>
+          <div class="icon">
+            <div class="item"><img src="image/icon1.png"><p>현재 유일한<br>Swift4 기반의 FP강의</p></div>
+            <div class="item"><img src="image/icon2.png"><p>파트1은 무료 열람</p></div>
+            <div class="item"><img src="image/icon3.png"><p>열람 기간 제한 없음</p></div>
+          </div>
+        </center>
+        <iframe src="https://player.vimeo.com/video/288091011?title=0&amp;byline=0&amp;portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+        </iframe>
+      </div>
+      <div class="body2" style="max-width:796px">
+        <h2>이제는 많은 개발자들이 배우고 싶어하는 함수형 프로그래밍</h2>
+        <p>최근 몇 년간 함수형 프로그래밍, Functional Programming(FP)에 대한 관심이 무척이나 높아졌습니다.<br> 각종 분야의 밋업이나 세미나에 갔을 때 FP에 대해 논하는 것은 흔한 풍경이 되었습니다. 특히 기존 코드를 FP 방식으로 리팩토링하는 모습을 보여주며, 이 좋은 것을 널리널리 쓰라는 이야기도 많이 들립니다.
+
+        하지만 많은 개발자들이 객체지향 프로그래밍 패러다임에 익숙한 상황에서, 새로운 패러다임으로 넘어가는 데에는 많은 노력이 필요합니다. 이것은 어떤 새로운 언어를 배우고 그 문법을 익혀서 쓰는 것과는 다른 이야기입니다.
+        <h2>함수형 프로그래밍 패러다임으로 넘어가는 것은 왜 어려울까?</h2>
+        한 프로그래머가 가진 인식 체계(패러다임)은 프로그램의 구조를 설계하는 것 부터 소스코드를 짜기까지 모든 과정에 깊게 관여합니다. 이 프로그래머가 객체지향 프로그래밍 패러다임 속에서 평생을 프로그래밍 해온 사람이라고 가정할 때, 함수형 프로그래밍을 새롭게 배우는 데 있어서 이런 어려움이 따를 수 있습니다:
+        <div class="body2_2">
+            <p>변수 없이 프로그램을 짠다는 것 자체가 이상하게 느껴집니다. 조금 더 개발자 친화적으로 표현하자면, state 없이 프로그래밍을 하라는 설명 자체가 너무나도 어색합니다.</p>
+            <p>FP에서 등장하는 Currying 이라는 개념도 이상합니다. 함수를 만드는 함수를 만드는 함수를 만든다는 것(오타 아님)이 도대체 무슨 말인지 이해가 되질 않습니다.</p>
+            <p>데이터를 바꾸지 않으면서 프로그램의 행동을 제어한다는 것이 이상합니다. 그냥 다 이상하게 느껴집니다.</p>
+        </div>
+        <p>이제 함수형 프로그래밍에 대한 이해는 대세를 넘어 하나의 필수 영역으로 자리잡아가고 있습니다.<br>
+        관심만 갖고 기웃거리기보다, 직접 체험하고 실무에 적용해보시길 바랍니다.</p>
+      </div>
+      <div class="body3" style="max-width:796px">
+          <div class="body3_2">
+            <img src="image/icon4.png">
+            <h2>FP 자체가 처음인 분들을 위한 특강입니다</h2>
+            이 강의는 함수형 프로그래밍이 처음인 개발자들을 대상으로,<br>
+            기존의 사고 체계를 조금씩 바꿔나가는 데에 도움을 드리고자 이론과 실습으로 구성한 강의입니다.
+            <p></p>
+            <div class="body3_2_1">
+              <p><strong>- 강의 분량이 방대하지 않아요.</strong><br>
+              짧고 굵게, 부담스럽지 않게 새로운 개념을 받아들일 수 있는 것에 초점을 두었습니다.
+              </p>
+              <p><strong>- 실습, 라이브 코딩을 통해 더욱 '개발자스럽게' 이해하세요.</strong><br>
+              파트 2는 실습으로만 이뤄져있고, 코드를 통해 FP에 대해 더욱 명쾌히 알게됩니다.
+              </p>
+              <p><strong>
+              - 우리에게 필요한건 화려한 설명이 아니죠.</strong><br>
+              어려운 말을 마구 쓰면서 여러분을 시험에 빠트리지 않습니다.
+              </p>
+            </div>
+          </div>
+          <div class="body3_3">
+            <img src="image/icon5.png">
+            <h2>이런 분들은, 꼭 발도장 찍고 가세요</h2>
+              <p><strong>+ 동시성, 비동기성이 중요한 서비스를 개발하려고 하시는 분</strong></p>
+              <p><strong>+ 간결한 소스코드를 쓰고싶어서 맨날 고민하는 분</strong></p>
+              <p><strong>+ FP 학습에 관심이 있는 누구나</strong></p>
+              <p>이 강의는 FP에 대해 아무리 이해하려 노력해도 그 근본 체계 자체가 너무나도 어색하고,<br> OOP와 너무 달라 불편하기만 하고, 어렵다고만 느껴지는 분들을 위해 만들었습니다.</p>
+          </div>
+        </div>
+      <div class="body4" style="max-width:796px">
+        <h2>커리큘럼</h2>
+        <div class="body4_2">
+        <p>프로그래밍 패러다임에 대한 이해를 시작으로,<br>
+        함수형 프로그래밍 프로젝트까지: 챕터 2의 실습을 놓치지 마세요.</p>
+        <p><strong>1 프로그래밍 패러다임: 함수형 프로그래밍(이하 FP)이란 도대체 무엇이며, 왜 요즘 관심이 급부상한걸까?</strong><br>
+          <div class="body4_2_1">
+            1-1 프로그래밍 패러다임의 변천사: 시대적 요구에 따라 달라져온 프로그래밍 패러다임.<br>
+            시대적 요구에 따라 객체지향 프로그래밍 패러다임이 등장했고 현재의 주류를 담당하고 있다. 그렇다면 FP는?<br>
+            1-2 FP가 '재'조명 받는 이유: 지금은 프로그래밍에 있어 어떤 것이 중요하기에 FP가 새롭게 조명받는걸까?<br>
+            1-3 FP에 대한 오해들: 고차함수(Higher-Order Function)를 쓰면 내가 FP를 하고 있는걸까?<br>
+            FP는 OOP를 대체할 수 있는걸까? FP를 위한 언어가 따로 있어서 그 언어만 써야 하는걸까?
+          </div>
+          </p>
+        <p>
+        <strong>2 함수를 잘 다루기 위한 기술들: 실습으로 구성된 챕터</strong><br>
+          <div class="body4_2_1">
+          2-1 순수함수: Pure Function<br>
+          2-2 고차함수: Higher-Order Function<br>
+          2-3 함수 합성: Composition<br>
+          2-4 커링: Currying<br>
+          </p>
+          </div>
+        <p>
+        <strong>3 기존 코드를 FP로 리팩토링하기: 예제, 라이브코딩으로 구성된 챕터</strong><br>
+          <div class="body4_2_1">
+          3-1 FizzBuzz: 반복문, 조건문으로 구성된 non-FP 프로그램을 FP 방식으로 리팩링.<br>
+          3-2 Low-High: state를 갖지 않는 FP에서, loop 과 전역변수<br>
+          3-3 Weather Forecast: 비동기성, 동시성을 처리하는 FP의 방식 체험.<br>
+          </p>
+          </div>
+        <p>
+        <strong>4 자판기 구현 프로젝트: FP를 프로젝트에 어떻게 도입할까?</strong>
+          <div class="body4_2_1">
+          4-1 프로젝트 개요<br>
+          4-2 FP 프로그램을 설계하는 방법과 과정 익히기<br>
+          4-3 구현하기: 설계한 내용을 기반으로 실제 기능을 FP로 구현해보기<br>
+          4-4 UI 적용하기: iOS 앱을 만들면서 UI 에 FP 로직을 접목한다.<br>
+          4-5 이후의 학습 방향 제안<br>
+          </div>
+        </p>
+        </div>
+      </div>
+      <div class="body5" style="max-width:796px">
+        <h2>강사소개</h2>
+        <img src="image/teacher.png" width="100%">
+        <ul>
+          <li>iOS 밋업 'let us: Go!' 2017 가을, 2018봄, 여름 발표자. 주제는 모두 FP 관련!</li>
+          <li>임베디드/모바일 소프트웨어 프로그래머</li>
+          <li>임베디드/응용 프로그래밍/Arduino/3D Printer 강사</li>
+          <li>고용노동부 스펙초월 멘토스쿨 멘토</li>
+          <li>임베디드소프트웨어 산업협회 위원</li>
+          <li><span style="font-weight:bold;"><a href="index.html">블로그</a>, <a href="index.html">GitHub</a></span></li>
+        </ul>
+      </div>
+      <div class="footer" style="max-width:796px">
+        <h4>강의는 열람 기간 제한 없이 제공됩니다. ‘질문’ 탬에서 질문도 남길 수 있습니다. 애용하세요!<br>
+        1챕터는 무료로 열람할 수 있으며, 2챔터부터는 실제로 소스코드를 짜보는 실습, 3챕터부터는 리팩토링 과정을 통한 더욱 풍부한 학습 내용이 준비되어 있습니다.</h4>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
